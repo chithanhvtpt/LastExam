@@ -27,6 +27,7 @@ class ProductModel extends BaseModel
         $stmt->bindParam(4, $data["quantity"]);
         $stmt->bindParam(5, $data["dates"]);
         $stmt->bindParam(6, $data["description"]);
+        $stmt->execute();
     }
 
     public function search($key)
